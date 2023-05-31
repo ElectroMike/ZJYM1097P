@@ -81,8 +81,8 @@ void setup() {
     for(;;); // Ne pas continuer, boucler indéfiniment
   }
 
-   display.ssd1306_command(0xA0); // Réaffectation du segment pour que l'adresse de colonne 127 corresponde à SEG0 (miroir)
-
+   display.ssd1306_command(0xA0); // Réaffectation du segment pour que l'adresse de colonne 127 corresponde à SEG0 (normal)
+   //display.ssd1306_command(0xA0); // Réaffectation du segment pour que l'adresse de colonne 127 corresponde à SEG0 (miroir)
 
 
   // Affiche les contenus initiaux du tampon d'affichage à l'écran --
